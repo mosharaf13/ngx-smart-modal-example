@@ -1,0 +1,14 @@
+<div>
+
+
+<p>Feature lazy loaded</p>
+
+<button (click)="openModal('homeModal')">Open home modal</button>
+<button (click)="openModal('lazyFeatureModal')">Open lazy feature modal</button>
+
+<!-- Classic modal -->
+<ngx-smart-modal #lazyFeatureModal [identifier]="'lazyFeatureModal'">
+  <h1>Hey, I'm a simple modal!</h1>
+  <p>I'm from the lazyFeature</p>
+</ngx-smart-modal>
+</div>

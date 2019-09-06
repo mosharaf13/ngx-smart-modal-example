@@ -1,0 +1,24 @@
+<h1>
+  {{title}}
+</h1>
+
+<button routerLink="">Home</button>
+<button routerLink="/lazyFeature">lazyFeature</button>
+<button routerLink="/shopping">shopping</button>
+
+<p>Open modals</p>
+<button (click)="openModal('homeModal')">Open home modal</button>
+<button (click)="openModal('lazyFeatureModal')">Open lazy feature modal</button>
+<router-outlet></router-outlet>
+
+<!-- Classic modal -->
+<ngx-smart-modal #homeModal [identifier]="'homeModal'">
+  <h1>Hey, I'm a simple modal!</h1>
+  <p>I'm from the homepage</p>
+</ngx-smart-modal>
+
+<!-- 
+Copyright 2017-2018 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
